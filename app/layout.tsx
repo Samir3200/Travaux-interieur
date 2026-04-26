@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -34,6 +35,7 @@ export default function RootLayout({
           Site créé par <a href="mailto:samelmir5a@gmail.com" style={{color: '#4da8e6', textDecoration: 'underline'}}>samelmir5a@gmail.com</a>
         </footer>
       </body>
+      <Analytics />
     </html>
   );
 }
