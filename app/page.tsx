@@ -111,7 +111,7 @@ export default function Home() {
 
       {/* Galerie d'images par catégories */}
       <section className="max-w-5xl w-full px-4 mb-16">
-        <h2 className="text-4xl font-bold mb-6 text-brown-900 dark:text-cyan-200 text-center drop-shadow">Réalisations par Bilel</h2>
+        <h2 className="text-4xl font-bold mb-6 text-brown-900 dark:text-cyan-200 text-center drop-shadow">Réalisations par BILEL</h2>
         <div className="flex flex-col gap-12">
           {categories.map((cat, i) => (
             <React.Fragment key={cat.title}>
@@ -134,7 +134,7 @@ export default function Home() {
              
                 {i !== categories.length - 1 && (
                   <hr
-                    className="my-8 border-0 h-1 bg-gradient-to-r from-blue-700 via-cyan-700 to-transparent rounded-full shadow-lg"
+                    className="my-8 border-0 h-1 bg-gradient-to-r from-green-700 via-blue-700 to-transparent rounded-full shadow-lg"
                     style={{ opacity: 0.95 }}
                   />
                 )}
@@ -152,13 +152,15 @@ export default function Home() {
             href="https://wa.me/33651753772"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-green-600 hover:bg-green-500 text-white font-bold py-2 px-6 rounded-full shadow transition-colors flex items-center gap-2"
+            className="whatsapp-btn-contact"
           >
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M16.862 14.487c-.263-.131-1.558-.77-1.799-.858-.241-.088-.417-.131-.593.132-.175.263-.676.858-.828 1.033-.151.175-.304.197-.567.066-.263-.132-1.11-.409-2.114-1.304-.782-.696-1.31-1.556-1.464-1.819-.151-.263-.016-.405.115-.536.118-.117.263-.304.395-.456.132-.151.175-.263.263-.438.088-.175.044-.329-.022-.462-.066-.132-.593-1.432-.813-1.963-.214-.514-.433-.444-.593-.452l-.504-.009c-.175 0-.462.066-.705.329-.242.263-.926.905-.926 2.205 0 1.3.948 2.557 1.08 2.732.132.175 1.87 2.857 4.522 3.89.633.217 1.127.346 1.513.443.636.162 1.215.139 1.673.084.511-.06 1.558-.637 1.779-1.253.22-.615.22-1.142.154-1.253-.066-.11-.241-.175-.504-.307z" />
-              <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12c0 1.708.438 3.313 1.205 4.704L2.25 21.75l5.13-1.347A9.708 9.708 0 0012 21.75c5.385 0 9.75-4.365 9.75-9.75z" />
-            </svg>
-            <span>Contactez-moi</span>
+            <span className="whatsapp-icon-contact">
+              <svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="16" cy="16" r="16" fill="#fff"/>
+                <path d="M16 6C10.477 6 6 10.477 6 16c0 2.021.607 3.899 1.655 5.47L6 26l4.66-1.613A9.94 9.94 0 0 0 16 26c5.523 0 10-4.477 10-10S21.523 6 16 6zm0 17.5c-1.7 0-3.29-.5-4.63-1.36l-.33-.21-2.76.96.94-2.69-.22-.34A7.47 7.47 0 0 1 8.5 16c0-4.14 3.36-7.5 7.5-7.5s7.5 3.36 7.5 7.5-3.36 7.5-7.5 7.5zm4.13-5.62c-.23-.12-1.36-.67-1.57-.75-.21-.08-.36-.12-.51.12-.15.23-.58.75-.71.9-.13.15-.26.17-.49.06-.23-.12-.97-.36-1.85-1.13-.68-.6-1.14-1.34-1.28-1.57-.13-.23-.01-.36.1-.48.1-.1.23-.26.34-.39.11-.13.15-.23.23-.38.08-.15.04-.28-.02-.4-.06-.12-.51-1.23-.7-1.68-.18-.44-.37-.38-.51-.39-.13-.01-.28-.01-.43-.01-.15 0-.4.06-.61.28-.21.22-.8.78-.8 1.9 0 1.12.82 2.2.94 2.36.12.15 1.61 2.46 3.91 3.35.55.19.98.3 1.31.38.55.14 1.05.12 1.44.07.44-.07 1.36-.56 1.55-1.1.19-.54.19-1 .13-1.1-.06-.1-.21-.16-.44-.28z" fill="#25D366"/>
+              </svg>
+            </span>
+            <span className="whatsapp-text-contact">Contactez-moi</span>
           </a>
         </div>
       </section>
